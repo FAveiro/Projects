@@ -1,0 +1,43 @@
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.squares_main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.square {
+  display: block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  margin: 0 10px 10px 0;
+  padding: 10px 21px;
+  text-transform: uppercase;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white; /*#3e3e3e;*/
+  background: #53b7e8; /*#7cb289;*/
+  border-bottom: 1px solid #343434;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  float: left;
+}
+
