@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     let timer;
 
-    if (start) {
+    if (start && (sec > 0 || min > 0 || hours > 0)) {
       timer = setInterval(() => {
         setSec((prevSec) => {
           if (prevSec > 0) {
